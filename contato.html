@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="./Assets/Logo-VnW.png">
+	<link rel="stylesheet"  href="./contato.css">
+	<link rel="stylesheet" href="./fonts.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<title>Corporate EdTech</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body id="Contato">
+	<section id="menu-mobile" class="menu-mobile">
+		<img class="header__logoMobile" src="./Assets/Logo-VnW.svg" alt="Logo-VnW-menu" />
+		<img src="./Assets/close.svg" class="navBar__MenuMobile-close" onclick="closeMenu()" />
+		<ul class="navBar__MenuMobile">
+			<a class="navBar__MenuMobile-item" href="./index.html" onclick="closeMenu()">4ª Rev. Industrial</a>
+			<a class="navBar__MenuMobile-item" href="./corporateEdTech.html" onclick="closeMenu()">EdTech</a>
+			<a class="navBar__MenuMobile-item" href="./socialEdTech.html" onclick="closeMenu()">SocialTech</a>
+			<a class="navBar__MenuMobile-item" href="#contact" onclick="closeMenu()">Contato</a>
+			<a class="navBar__MenuMobile-item" href="./En/corporateEdTechEn.html"  onclick="closeMenu()">English</a>
+		</ul>
+	</section>
+	<nav id="menuHeader" class="navBar__home" display="none">
+		<img src="./Assets/Logo-VnW.svg" alt="Logo-VnW-menu" class="navBar__homeLogo sticky" />
+		<ul class="navBar__Menu">
+			<a class="navBar__Menu-item" href="./index.html">4RI</a>
+			<a class="navBar__Menu-item" href="./corporateEdTech.html">EdTech</a>
+			<a class="navBar__Menu-item" href="./socialEdTech.html">SocialTech</a>
+			<a class="navBar__Menu-item" href="#contact">Contato</a>
+			<a class="navBar__Menu-item" href="./En/corporateEdTechEn.html">English</a>
+		</ul>
+	</nav>
+	<main>
+		<p>// CONTATO</p>
+		 <form class="form" action="/controllers/controllerForm.php" method="POST">
+			<label class="form__label" htmlFor="nome">seu nome:</label>
+			<input 
+				class="form__input" 
+				id="nome" 
+				name="nome" 
+				type="text" 
+				placeholder="Digite seu nome"
+			/>
+			<label class="form__label" htmlFor="email">agora seu email:</label>
+			<input 
+				class="form__input" 
+				id="email" 
+				name="email" 
+				type="email" 
+				placeholder="Digite seu e-mail"
+			/>
+			<label class="form__label" htmlFor="mensagem">por último, sua mensagem:</label>
+			<textarea 
+				class="form__input form__input--textarea" 
+				id="mensagem" 
+				name="mensagem" 
+				placeholder="Digite a mensagem"
+			></textarea>
+			<input 
+				class="button button--white" 
+				type="submit" 
+				value="enviar →"
+			/>
+		</form>
+	</main>
+  <script src="./javascript/script.js"></script>
+</body>
+</html>

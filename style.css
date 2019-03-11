@@ -1,0 +1,669 @@
+::-webkit-scrollbar {
+	width: 15px;
+	height: 20px;
+	-webkit-border-radius: 16px;
+}
+
+::-webkit-scrollbar-track-piece {
+	background-color: #F7F7F7;
+	-webkit-border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	height: 5px;
+	background-color: #0F2B92;
+	-webkit-border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+	width: 5px;
+	background-color: #0F2B92;
+	-webkit-border-radius: 3px;
+}
+
+*,
+*:after,
+*:before{
+	margin: 0; 
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #F7F7F7;
+}
+html{
+	scroll-behavior: smooth;
+}
+/*>>>>>>>>>>>>>>>>>>> home >>>>>>>>>>>>>>>>>>>*/
+.containerLogo__home{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url("./Assets/Home-Capa.jpg") no-repeat center fixed;
+	background-size: cover;
+	height: 90vh ;
+}
+.containerLogo__title{
+	position: absolute;
+	right: 2rem;
+	bottom: 2rem;
+	width: 620px;
+	padding: 1rem 1.5rem;
+	background: #fff;
+}
+.logoHome__title{
+	width: 100%;
+	color: #000;
+	font-size: 2.5rem;
+	font-family: "usualBold",sans-serif;
+}
+.header__logoMobile{
+	position: absolute;
+	top: 1.5rem;
+	left: 1.5rem;
+	display: none;
+	z-index: 3;
+}
+.header__menuMobile{
+	position: absolute;
+	display: none;
+	top: 2rem;
+	right: 2rem;
+	width: 13%;
+	z-index: 3;
+}
+@media(max-width: 768px){
+	.header__logoMobile{
+		display: block;
+	}
+	.header__menuMobile{
+		display: block;
+	}
+}
+@media(max-width: 425px){
+	.containerLogo__home{
+		align-items: flex-end;
+		height: 85vh;
+		background: url("./Assets/Home-Capa_mobile.jpg") no-repeat center;
+		background-size: 100%;
+	}
+	.containerLogo__title{
+		position: static;
+		width: 80%;
+		padding: 10%;
+		font-size: 24px;
+	}
+	.logoHome__title{
+		width: 100%;
+		color: #000;
+		font-size: 1.75rem;
+		font-family: "usualBold",sans-serif;
+	}
+	.header__logoMobile{
+		width: 30%;
+	}
+}
+/*>>>>>>>>>>>>>>>>>>> menu > home >>>>>>>>>>>>>>>>>>>*/
+.navBar__home{
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #F7F7F7;
+	width: 100%;
+	height: 11vh;
+	padding: 0 5rem;
+	z-index: 9;
+}
+.navBar__Menu{
+	display: flex;
+	align-items: center;
+}
+.navBar__Menu-item{
+	font-family:"sourceRegular", sans-serif;
+	text-decoration: none;
+	color: #000000;
+	margin: 20px;
+}
+.navBar__Menu-item:hover{
+	font-family:"sourceBold", sans-serif;
+	border-bottom:  solid #FF611E 2px;
+}
+.navBar__homeLogo{
+	width: 90px;
+}
+.menu-mobile{
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background: #E8E8E8;
+	z-index: 5;
+}
+.navBar__MenuMobile-close{
+	position: absolute;
+	top: 1.5rem;
+	right: 1.5rem;
+	width: 10%;
+}
+.navBar__MenuMobile{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 1.5rem;
+}
+.navBar__MenuMobile-item{
+	margin: .75rem 0;
+	font-size: 25px;
+	font-family:"sourceBold", sans-serif;
+	color: #00145D;
+	text-decoration: none;
+	text-align: center;
+}
+@media(max-width: 768px){
+	.navBar__home{
+		display: none;
+	}
+}
+/*>>>>>>>>>>>>>>>>>>> sobre > um novo jogo >>>>>>>>>>>>>>>>>>>*/
+.contPrimeiro__novoJogo{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #00145D;
+	text-align: left;
+	padding: 10%;  
+}
+.novoJogo__title{
+	width: 84%;
+	margin-bottom: 2rem; 
+	font-size: 3em;
+	font-family: "usualBold",sans-serif;
+	color: #FFAC2D;
+}
+.contNovoJogo__parag{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.novoJogo__parag{
+	width: 72%;
+	padding: 1%;
+	font-family: "usualRegular",sans-serif;
+	font-size: 20px;
+	line-height: 2;
+	color: #fff;
+}
+@media(max-width: 980px){
+	.novoJogo__title{
+		font-size: 2em;
+		margin-right: 13%;
+	}
+	.novoJogo__parag{
+		width: 100%;
+	}
+}
+/*>>>>>>>>>>>>>>>>>>> sobre > contedudo primario >>>>>>>>>>>>>>>>>>>*/
+.contPrimeiro__profissionais{
+	display: flex;
+	align-items: flex-end;
+	background: url("./Assets/Home-Anna.jpg") no-repeat center fixed;
+	background-size: cover;
+	height: 91vh;
+	padding-left: 5rem;
+	padding-bottom: 4rem;
+}
+.profissionais__text{
+	width: 690px;
+	margin-left: 1.5rem;
+	font-family: "usualBold",sans-serif;
+	font-size: 40px;
+	color:#fff;
+
+}
+.profissionais__alter{
+	font-family: "usualLight",sans-serif;
+}
+.contProfissionais__text{
+	background-color:#F7F7F7;
+	width: 514px;
+	padding: 1.5rem;
+	margin-top: 24px;
+	font-family: "usualRegular",sans-serif;
+	font-size: 16px;
+	line-height: 1.8;
+}
+.text_alter{
+	line-height: 1.8;
+}
+.profissionaisImg__mobile{
+	display: none;
+}
+.profissionais_cont_mobile{
+	display: none;
+	width: 100%;
+	padding: 2rem;
+}
+.profissionais__text_mobile{
+	margin-bottom: 2rem;
+	font-family: "usualBold",sans-serif;
+	font-size: 30px;
+	color:#000;
+}
+.profissionais__alter_mobile{
+	font-family: "usualRegular",sans-serif;
+	font-size: 30px;
+	color:#000;
+}
+.contProfissionais__text_mobile{
+	font-family: "usualRegular",sans-serif;
+	font-size: 16px;
+	color:#000;
+}
+@media(max-width: 980px){
+	.profissionaisImg__mobile{
+			display: block;
+			width: 100%;
+	}
+	.profissionais_cont_mobile{
+			display: block;
+	}
+	.contPrimeiro__profissionais{
+			display: none;
+	}
+	.profissionais_cont{
+			display: none;
+	}
+}
+/*>>>>>>>>>>>>>>>>>>> sobre > contedudo secudario trabalho incluisivo >>>>>>>>>>>>>>>>>>>*/
+.conteudosPrincipais__trabalho{
+	display: flex;
+	flex-direction: column;
+	padding-top: 13rem;
+	background-color: #F7F7F7;
+}
+.contForca__trabalho{
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	width: 100%;
+}
+.diversiade__title{
+	margin-bottom: 4rem;
+	margin-left: 15%;
+	font-family: "usualBold",sans-serif;
+	font-size: 40px;
+}
+.diversiade__title-mobile{
+	display: none;
+	width: 100%;
+	margin: 2rem 0;
+	padding: 0 10%;
+	font-family: "usualBold",sans-serif;
+	font-size: 30px;
+}
+.contTrabalho__text{
+	position: relative;
+	width: 190px;
+	margin-right: 7%;
+	line-height: 1.7;
+	z-index: 2;
+}
+.trbabalhoPorcento{
+	margin: 0;
+	font-family: "usualBold",sans-serif;
+	font-size: 59px;
+	color:#FF611E;
+	z-index: 3;
+}
+.trabalhoprag{
+	font-family: "usualLight",sans-serif;
+	font-size: 14px;
+}
+.trabalhoPrag__font{
+	font-family: "usualBold",sans-serif;
+}
+.trabalhoprag__edit{
+	font-size: 12px;
+	font-family:"sourceRegular", sans-serif;
+	color:#909090; 
+}
+.diversidade__img{
+	position: absolute;
+	width: 230px;
+	right: -85%;
+	top: -5%;
+	z-index: 0;
+}
+.contTrabalho__inclusivo{
+	width: 55%;
+}
+.trabalhoInclusivo__img{
+	width: 100%;
+}
+
+@media(max-width: 768px){
+	.conteudosPrincipais__trabalho{
+		padding-top: 5rem;
+	}
+	.contForca__trabalho{
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.diversiade__title{
+		display: none;
+	}
+	.diversiade__title-mobile{
+		display: block;
+	}
+	.contTrabalho__text{
+		width: 100%;
+		padding: 0 10%;
+		margin: 0;
+	}
+	.trbabalhoPorcento{
+		font-size: 90px;
+	}
+	.diversidade__img{
+		width: 25%;
+		top: 0;
+		right: 0;
+	}
+	.contTrabalho__inclusivo{
+		width: 100%;
+	}
+}
+
+@media(max-width: 450px) {
+	.diversidade__img{
+		width: 50%;
+		top: -5%;
+		right: 0;
+	}
+}
+/*>>>>>>>>>>>>>>>>>>> sobre > conteudo  terciario global goals >>>>>>>>>>>>>>>>>>>*/
+.contGlobal__goals{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: url("./Assets/Mapa-Global_Goals.svg") no-repeat center ;
+	background-size: contain;
+	height: 100vh;
+	margin: 10%;
+}
+.contglobalgoals__text{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 17px;
+}
+.globalGoals__title{
+	font-size: 65px;
+	font-family: "usualExtraBold",sans-serif;
+	color: #0F2B92;
+	text-align: center;
+}
+hr{
+	background-color:#FFAC2D;
+	padding: 6px 25%;
+	margin: 1%;
+	border:none; 
+} 
+.globalGoals__parag{
+	font-family: "usualRegular",sans-serif;
+	width: 38%;
+	margin: 2%;
+	line-height: 1.7;
+}
+.color{
+	color: #626262;
+}
+.goalsImg{
+	width: 100%;
+}
+.mobile{
+	display: none;
+}
+@media(max-width:768px){
+	.contGlobal__goals{
+			background-position:top;
+			height: 160vh;
+	}
+	.globalGoals__parag{
+			width: 272px;
+	}
+	hr{
+			padding: 6px 50%;
+	}
+	.color{
+			color:#FF611E;
+	}
+	.goalsImg{
+			display: none;
+	}
+	.mobile{
+			display: block;
+			width: 100%;
+	}
+}
+/*>>>>>>>>>>>>>>>>>>> sobre > conteudo  Organisation >>>>>>>>>>>>>>>>>>>*/
+.contOrganization{
+	display: flex;
+	justify-content: center;
+}
+.contOrganization__corporate{
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-start;
+	flex-direction: column;
+	width: 30%;
+	font-style:normal;
+}
+.contOrganization__social{
+	display: flex;
+	align-items: flex-start;    
+	flex-direction: column;
+	width: 30%;
+	margin-left: 2.5rem;
+}
+.contOrganization__title{
+	width: 100%;
+	margin-bottom: 2rem;
+	font-family: "usualBold",sans-serif;
+	font-size: 40px;
+	text-align: center;
+}
+.organizationCorporate__img{
+	width: 100%;
+}
+.button{
+	margin-top: -2rem;
+	margin-right: 6%;
+	background: #00145D;
+	border: solid 2px #00145D;
+	border-radius: 10px;
+	padding:  1rem 1.5rem;
+	font-family:"sourceRegular", sans-serif;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.button-social{ 
+	margin-left: 17%;
+}
+.contOrganization p{
+	position: relative;
+	background: #ffff;
+	padding: 3%;  
+	top:-10%;
+	line-height: 1.7;
+}
+.organizationCorporate__parag{
+	width: 110%;
+	left: -6%;
+	font-family: "usualRegular",sans-serif;
+	font-size: 16px;
+}
+.organizationSocial__parag{
+	width: 95%;
+	left: 17%;
+	font-family: "usualRegular",sans-serif;
+	font-size: 16px;
+}
+.button:hover{
+	border: solid 2px #FFAC2D;
+	color: #FFAC2D;
+}
+@media(max-width:768px){
+	.contOrganization__corporate{
+		align-items: center;
+		padding-bottom: 3rem;
+	}
+	.contOrganization__social{
+		align-items: center;
+		padding-bottom: 3rem;
+	}
+	.contOrganization__corporate h1{
+		order: 1; 
+		margin: 2rem 10%;
+		font-size: 30px;
+	}
+	.button{
+		margin: 0;
+		margin-top: 2rem;
+		order: 4;
+	} 
+	.organizationCorporate__parag{
+		order: 1;
+		width: 100%;
+	}
+	.contOrganization__social h1{
+		order: 1;
+		margin: 2rem 0;
+		font-size: 30px;
+	}
+	.organizationSocial__parag{
+		order: 1;
+		width: 100%;
+	}
+	.organizationCorporate__img{
+		width: 100%;
+	}
+	.contOrganization{
+		flex-direction: column;
+	}
+	.contOrganization p{
+		position: static;
+		padding: 0 10%;
+		background-color: transparent;
+	}
+	.contOrganization__corporate{
+		width: 100%;
+		margin: 0;
+	}
+	.contOrganization__social{
+		width: 100%;
+		margin: 0;
+	}
+}
+/*>>>>>>>>>>>>>>>>>>> Footer > roda pé >>>>>>>>>>>>>>>>>>>*/
+.rodape{
+	background-color: #00145D;
+	margin-top: 15%;
+	padding-bottom: 4rem;
+}
+.rodapeImg{
+	position: relative;
+	top: -24px;
+	left: 99px;
+	width: 100px;
+}
+.contRodape__text{
+	display: flex;
+	justify-content: space-around;
+}
+.rodape_section{
+	width: 15%;
+}
+.rodape_section1{
+	width: 30%;
+}
+.rodape-text{
+	font-family:"sourceBold", sans-serif;
+	color: #fff;
+}
+.rodape__Menu{
+	display: flex;
+	flex-direction: column;
+}
+.rodape__Menu-item{
+	font-size: 14px;
+	font-family:"sourceBold", sans-serif;
+	line-height: 1.7;
+	color: #fff;
+	text-decoration: none;
+}
+.rodapeIcon{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 2rem;
+}
+.ropapeIconLink{
+	height: 40px;
+}
+@media(max-width:768px){
+	.rodape{
+		padding: 0 10%;
+	}
+	.rodapeImg{
+		left: 0;
+	}
+	.rodape-text{
+		font-family:"sourceRegular", sans-serif;
+		font-size: 14px;
+	}
+	.contact{
+		font-size: 18px;
+		font-family:"sourceBold", sans-serif;
+	}
+	.rodape_section{
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		margin: 2rem 0;
+	}
+	.section3{
+		display: block;
+	}
+	.rodapeIcon {
+		align-items: center;
+		flex-direction: column;
+		margin: 0;
+	}
+	.contOrganization__corporate{
+		width: 100%;
+	}
+	.contRodape__text{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 11px;
+		font-size: 20px;
+	}
+	.rodape__Menu-item{
+		font-size: 18px;
+	}
+}

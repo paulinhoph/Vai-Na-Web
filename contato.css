@@ -1,0 +1,205 @@
+::-webkit-scrollbar {
+	width: 15px;
+	height: 20px;
+	-webkit-border-radius: 16px;
+}
+
+::-webkit-scrollbar-track-piece {
+	background-color: #F7F7F7;
+	-webkit-border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	height: 5px;
+	background-color: #0F2B92;
+	-webkit-border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+	width: 5px;
+	background-color: #0F2B92;
+	-webkit-border-radius: 3px;
+}
+
+*,
+*:after,
+*:before{
+	margin: 0; 
+	padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #00145D;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+/*>>>>>>>>>>>>>>>>>>> Home  EdTech >>>>>>>>>>>>>>>>>>>*/
+.navBar__home{
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background:  #00145D ;
+	width: 100%;
+	height: 11vh;
+	padding: 0 5rem;
+	z-index: 9;
+}
+.navBar__Menu{
+	display: flex;
+	align-items: center;
+}
+.navBar__Menu-item{
+	font-family:"sourceRegular", sans-serif;
+	text-decoration: none;
+	color:  #fff;
+	margin: 20px;
+}
+.navBar__homeLogo{
+	width: 90px;
+}
+.navBar__Menu-item:hover{
+	font-family:"sourceBold", sans-serif;
+	border-bottom:  solid #FF611E 2px;
+}
+.navBar__Menu-text{
+	font-family:"sourceRegular", sans-serif;
+	color: #fff;
+	margin: 20px;
+}
+.navBar__Menu-text:hover{
+	font-family:"sourceBold", sans-serif;
+	border-bottom:  solid #FF611E 2px;
+}
+.menu-mobile{
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background: #E8E8E8;
+	z-index: 5;
+}
+.navBar__MenuMobile-close{
+	position: absolute;
+	top: 1.5rem;
+	right: 1.5rem;
+	width: 10%;
+}
+.navBar__MenuMobile{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 1.5rem;
+}
+.navBar__MenuMobile-item{
+	margin: .75rem 0;
+	font-size: 25px;
+	font-family:"sourceBold", sans-serif;
+	color: #00145D;
+	text-decoration: none;
+	text-align: center;
+}
+.navBar__MenuMobile-text{
+	margin-top: 3rem;
+	font-size: 25px;
+	font-family:"sourceRegular", sans-serif;
+	color: #00145D;
+}
+@media(max-width: 768px){
+	.navBar__home{
+		display: none;
+	}
+}
+main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 4%;
+
+}
+
+p{
+	color: #fff;
+	font-family: "usualMedium",sans-serif;
+	font-style: normal;	
+	font-size: 12px;
+	align-self: flex-start;
+    margin-left: 25%;
+}
+.button{
+    border: none;
+    font-size: 12px;
+    color: #FF611E;
+}
+.button--white{
+    background: #00145D;
+}
+.form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+	align-items: flex-start;
+	margin: 1%;
+}
+.form__label{
+    margin-bottom: 8px;
+	font-family:"sourceRegular", sans-serif;
+	font-style: normal;	
+    font-weight: 500;
+	color: #FF611E;
+	font-size: 11px;
+    text-transform: uppercase;
+}
+.form__input{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 24px;
+    padding: 15px;
+	background: #00145D;
+	border: none;
+	border-bottom:  solid #828282 1px;
+	font-family: "usualMedium",sans-serif;
+	font-style: normal;	
+    color: #fff;
+}
+.form__input::-webkit-input-placeholder {
+    font-size: 12px;
+    color: #fff;
+}
+.form__input--textarea{
+    height: 150px;
+    resize: none;
+	box-shadow: none;
+	border: solid #828282 1px;
+}
+@media (max-width: 1020px){
+    .contact{
+        padding: 40px 20px;
+    }
+}
+@media (max-width: 992px){
+    .form{
+        width: 65%;
+    }
+    .contact__image{
+        position: absolute;
+        right: 20px;
+    }
+}
+@media (max-width: 768px){
+    .form{
+        width: 100%;
+    }
+    .contact__image{
+        display: none;
+    }
+}

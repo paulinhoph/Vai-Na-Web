@@ -35,7 +35,7 @@
 	</nav>
 	<main>
 		<p>// CONTATO</p>
-		 <form class="form" action="/controllers/controllerForm.php" method="POST">
+		 <form class="form" id="contatoForm" method="get" action="mailto:paulinhoph.ph67@gmail.com" target="_blank">
 			<label class="form__label" htmlFor="nome">seu nome:</label>
 			<input 
 				class="form__input" 
@@ -60,6 +60,8 @@
 				placeholder="Digite a mensagem"
 			></textarea>
 			<input 
+				onclick="sendMail(); 
+				return false"
 				class="button button--white" 
 				type="submit" 
 				value="enviar →"

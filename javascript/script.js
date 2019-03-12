@@ -61,9 +61,9 @@ function closeMenu(){
 }
 
 function sendMail() {
-  var link = "mailto:me@example.com"
-           + "?cc=myCCaddress@example.com"
-           + "&subject=" + escape("This is my subject")
+  var link = "mailto:alinefroes@1sti.com.br"
+           + "?cc=alinefroes@1sti.com.br"
+           + "&subject=" + escape("vai na web")
            + "&body=" + escape(document.getElementById('mensagem').value)
   ;
 

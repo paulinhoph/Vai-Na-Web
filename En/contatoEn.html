@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="../Assets/Logo-VnW.png">
+	<link rel="stylesheet"  href="../contato.css">
+	<link rel="stylesheet" href="../fonts.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<title>Corporate EdTech</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body id="Contato">
+	<section id="menu-mobile" class="menu-mobile">
+		<img class="header__logoMobile" src="../Assets/Logo-VnW.svg" alt="Logo-VnW-menu" />
+		<img src="../Assets/close.svg" class="navBar__MenuMobile-close" onclick="closeMenu()" />
+		<ul class="navBar__MenuMobile">
+			<a class="navBar__MenuMobile-item" href="./indexEn.html" onclick="closeMenu()">4th Industrial Rev.</a>
+			<a class="navBar__MenuMobile-item" href="./corporateEdTechEn.html" onclick="closeMenu()">EdTech</a>
+			<a class="navBar__MenuMobile-item" href="./socialEdTechEn.html" onclick="closeMenu()">SocialTech</a>
+			<a class="navBar__MenuMobile-item" href="#contact" onclick="closeMenu()">Contact</a>
+			<a class="navBar__MenuMobile-item" href="../corporateEdTech.html"  onclick="closeMenu()">Portuguese</a>
+		</ul>
+	</section>
+	<nav id="menuHeader" class="navBar__home" display="none">
+		<img src="../Assets/Logo-VnW.svg" alt="Logo-VnW-menu" class="navBar__homeLogo sticky" />
+		<ul class="navBar__Menu">
+			<a class="navBar__Menu-item" href="./indexEn.html">4RI</a>
+			<a class="navBar__Menu-item" href="./corporateEdTechEn.html">EdTech</a>
+			<a class="navBar__Menu-item" href="./socialEdTechEn.html">SocialTech</a>
+			<a class="navBar__Menu-item" href="#contact">Contact</a>
+			<a class="navBar__Menu-item" href="../corporateEdTech.html">Portuguese</a>
+		</ul>
+	</nav>
+	<main>
+		 <form class="form" id="contatoForm" method="get" action="mailto:ola@vainaweb.com.br" target="_blank">
+			<label class="form__label" htmlFor="nome">your name:</label>
+			<input 
+				class="form__input" 
+				id="nome" 
+				name="nome" 
+				type="text" 
+	
+			/>
+			<label class="form__label" htmlFor="email">now your email:</label>
+			<input 
+				class="form__input" 
+				id="email" 
+				name="email" 
+				type="email" 
+
+			/>
+			<label class="form__label" htmlFor="mensagem">Lastly, your message:</label>
+			<textarea 
+				class="form__input form__input--textarea" 
+				id="mensagem" 
+				name="mensagem" 
+
+			></textarea>
+			<input 
+				onclick="sendMail(); 
+				return false"
+				class="button button--white" 
+				type="submit" 
+				value="submit →"
+			/>
+		</form>
+	</main>
+  <script src="../javascript/script.js"></script>
+</body>
+</html>
